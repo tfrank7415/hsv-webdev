@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "hsv-webdev",
+    "PROD": "hsv-webdev-a67d1"
+  }
+}

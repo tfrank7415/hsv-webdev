@@ -1,0 +1,46 @@
+#mat-card-container {
+  align-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+#info-container {
+  text-align: center;
+}
+
+.mat-card {
+  text-align: left;
+  /*max-width: 300px;
+  max-height: 350px;
+  padding: 10px 50px 60px 50px; /*controls how big the card is around the content within*/
+  margin: 1em; /*separates the cards*/
+}
+
+#pricing-component-container {
+  text-align: center;
+  
+}
+/*.mat-card-image {
+  max-width: 250px;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.mat-card {
+  max-width: 300px;
+  max-height: 350px;
+  float: left;
+  width: 33.33%;
+  padding: 10px 50px 60px 50px;
+  margin: 1em;
+}
+
+#button {
+  background-color: #E3F2FD;
+}
+
+#cardGroupColumn::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/

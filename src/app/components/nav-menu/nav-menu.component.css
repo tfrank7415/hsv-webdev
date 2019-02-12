@@ -1,0 +1,19 @@
+#btn {
+  width: 100%;
+  text-align: left;
+}
+
+.material-icons {
+  font-size: 30px;
+  padding-right: 1em;
+}
+
+.nav-bar-img {
+  object-fit: contain;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.mat-drawer-container {
+  height: 100%;
+}

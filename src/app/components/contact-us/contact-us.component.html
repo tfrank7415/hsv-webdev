@@ -1,0 +1,41 @@
+<div id="contact-us-form-container" class="col-xs-12 col-md-12">
+  <h1 style="font-size: 40px; font-weight: bold;">Contact Us</h1>
+  <p>
+    Please fill out the form below to contact us.  After we receive your information, we will quickly reach out to you.<br>
+    Or you can reach us directly by calling <a href="tel:601-381-0494">601-381-0494.</a>
+    </p>
+    <p> Our mailing address is:<br>
+      4920 Crosswinds Drive Apt 234<br>
+      Huntsville, AL 35816
+      </p>
+  <div style="display: inline-block; max-width: 300px; margin-top: 30px; padding-bottom: 30px;">
+    <form [formGroup]="this.contactUsService.form" id="contactForm" (ngSubmit)="onSubmit()" (ngReset)="onReset()">
+      <input type="hidden" formControlName="$key">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Jeff" id="firstName" formControlName="firstName" class="form-control">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Doe" formControlName="lastName" class="form-control">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input matInput placeholder="123-456-1234" formControlName="phoneNumber" class="form-control">
+        <mat-icon matSuffix>phone</mat-icon>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="jeffdoe@gmail.com" formControlName="email" class="form-control">
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+      <mat-form-field style="width: 300px;">
+        <textarea matInput placeholder="Message" formControlName="message" class="form-control"></textarea>
+      </mat-form-field>
+      <button mat-stroked-button color="accent" style="margin-right: 10px" type="reset" (click)="onReset()">Reset</button>
+      <button mat-stroked-button color="accent" style="margin-left: 10px" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

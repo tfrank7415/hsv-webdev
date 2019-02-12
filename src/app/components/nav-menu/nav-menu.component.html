@@ -1,0 +1,26 @@
+<mat-drawer-container id="mat-drawer-container">
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <mat-list-item style="text-align: center">
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/" id="btn"><i class="material-icons">home</i>Home</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/our-mission" id="btn"><i class="material-icons">flag</i>Our Mission</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/pricing" id="btn"><i class="material-icons">attach_money</i>Pricing</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/the-process" id="btn"><i class="material-icons">group</i>The Process</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/contact-us" id="btn"><i class="material-icons">help</i>Contact Us</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/about-us" id="btn"><i class="material-icons">group</i>About Us</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/non-profit" id="btn"><i class="material-icons">all_inclusive</i>Non-profit?</button></mat-list>
+      <mat-list><button mat-button color="accent" (click)="drawer.toggle()" routerLink="/developer" id="btn"><i class="material-icons">desktop_windows</i>Developer?</button></mat-list>
+
+      <img class="nav-bar-img" src="../../assets/Logo/Without Text-svg.svg">
+    </mat-list-item>
+  </mat-drawer>
+
+  <div class="row-sm-12" style="display: inline-flex" style="width: inherit;">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <i class="material-icons">menu</i>
+      </button>
+      <button style="visibility: hidden" class="navbar-btn navbar-right" mat-button color="accent" routerLink="/sign-in" id="sign-in-btn">Sign-in</button>
+  </div>
+  <mat-divider></mat-divider>
+  <router-outlet></router-outlet>
+  <mat-divider></mat-divider>
+</mat-drawer-container>
